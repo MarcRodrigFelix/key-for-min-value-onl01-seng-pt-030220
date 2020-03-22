@@ -8,7 +8,7 @@ smallest_num = nil
 
   name_hash.each do |name, num|
     if smallest_num == nil || num < smallest_num
-      binding.py
+      binding.pry
       smallest_name = name
       smallest_num = num
     end
