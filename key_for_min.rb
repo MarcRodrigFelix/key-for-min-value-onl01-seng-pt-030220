@@ -3,13 +3,13 @@ require 'pry'
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(hash)
-lowest_key = nil
-lowest_val = nil
+smallest_name = nil
+smallest_num = nil
 
-  hash.each do |key, val|
-    if val < lowest_val 
-      lowest_val = val  
-      lowest_key = key 
+  hash.each do |name, num|
+    if num < smallest_num 
+      smallest_name = name
+      smallest_num = num
     end
   end
   lowest_key
