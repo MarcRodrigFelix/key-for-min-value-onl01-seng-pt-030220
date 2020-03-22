@@ -12,7 +12,7 @@ smallest_num = nil
       smallest_num = num
     end
   end
-  lowest_key
+  return smallest_name
 
 end
 
