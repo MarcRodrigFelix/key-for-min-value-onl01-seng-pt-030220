@@ -4,14 +4,26 @@ require 'pry'
 
 def key_for_min_value(hash)
 lowest_key = nil
-lowest_val = Float::INFINITY
+lowest_val = nil
 
   hash.each do |key, val|
-    if val < lowest_val
-      lowest_val = val
-      lowest_key = key
+    if val < lowest_val 
+      lowest_val = val  
+      lowest_key = key 
     end
   end
   lowest_key
 
 end
+
+
+# lowest_key = nil
+# lowest_val = Float::INFINITY
+
+#   hash.each do |key, val|
+#     if val < lowest_val
+#       lowest_val = val
+#       lowest_key = key
+#     end
+#   end
+#   lowest_key
