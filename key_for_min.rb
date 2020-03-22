@@ -19,15 +19,15 @@
 # return smallest box label
 
 def key_for_min_value(name_hash)
-  lowest_key = nil #smallest Key value we know of
-  lowest_val = nil #smallest Value, value we know of
-    name_hash.each do |key, val|
-      if val < lowest_val
-        lowest_key = key
-        lowest_val = val
+  smallest_key = nil #smallest Key value we know of
+  smallest_val = nil #smallest Value, value we know of
+    name_hash.each do |key, val| #iterate, check each box 
+      if smallest_val == nil || val < smallest_val #if our value is 0, or value being checked is bigger than our last value, record info.
+        smallest_key = key
+        smallest_val = val
       end
     end
-    return lowest_key
+    return smallest_key #return key with smallest value.
 
 end
 
